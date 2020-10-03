@@ -1,0 +1,22 @@
+{% extends "blog/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Login as a Student</h5>
+          <a href="{% url 'student_login' %}" class="btn btn-primary">Login</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Login as a Faculty</h5>
+          <a href="{% url 'faculty_login' %}" class="btn btn-primary">Login</a>
+        </div>
+      </div>
+    </div>
+</div>
+{% endblock content %}

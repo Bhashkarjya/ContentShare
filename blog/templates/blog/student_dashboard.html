@@ -1,0 +1,134 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./../../static/blog/stu_dash.css">
+    <title>Student Dashboard</title>
+</head>
+<body>
+    <div class="admin">
+        <header class="admin__header">
+            <a href="#" class="logo">
+                <h1>Subjects</h1>
+            </a>
+            <h1 class="welcome"> <div>Welcome to the notes section</div></h1>
+        </header>
+        <nav class="admin__nav">
+            <ul class="menu">
+                <li class="menu__title">Subjects List</li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Theory of Computation</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Operating System</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Data Warehousing and Data Mining</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Data Networks</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Software Engineering</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Object Oriented Programming</a>
+                </li>
+
+                <li class="menu__title">Dashboard</li>
+                <li class="menu__item">
+                    <a class="menu__link" href="{% url 'blog-home' %}"> Home</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="{% url 'blog-about' %}" >About</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="{% url 'dashboard_profile' %}"> My Profile</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="{% url 'logout' %}"> Logout</a>
+                </li>
+            </ul>
+        </nav>
+        <main class="admin__main">
+            <div class="dashboard">
+                
+                <div class="dashboard__item dashboard__item--full">
+                    <div class="card">
+                        <div class="card__header">
+                            Card full width
+                        </div>
+                        <div class="card__content">
+                            <div class="card__item">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium labore id culpa sit nisi nostrum, excepturi cumque eos laborum ducimus alias, provident doloribus et facere explicabo ab repudiandae perferendis earum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima dolore laudantium est, vel illo labore nostrum cupiditate perspiciatis, doloremque sit enim sequi, quasi cumque dolorum voluptate! Aliquam corrupti laboriosam nostrum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda cupiditate porro dolores optio dicta tempora quas, culpa itaque, unde recusandae tempore. Voluptas quia perferendis est veritatis nobis, iusto voluptate dolor?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard__item dashboard__item--col">
+                    <div class="card">
+                        <div class="card__header">
+                            Card
+                        </div>
+                        <div class="card__content">
+                            <div class="card__item">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium labore id culpa sit nisi nostrum, excepturi cumque eos laborum ducimus alias, provident doloribus et facere explicabo ab repudiandae perferendis earum.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard__item dashboard__item--col">
+                    <div class="card">
+                        <div class="card__header">
+                            Card
+                        </div>
+                        <div class="card__content">
+                            <div class="card__item">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium labore id culpa sit nisi nostrum, excepturi cumque eos laborum ducimus alias, provident doloribus et facere explicabo ab repudiandae perferendis earum.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard__item dashboard__item--col">
+                    <div class="card">
+                        <div class="card__header">
+                            Card
+                        </div>
+                        <div class="card__content">
+                            <div class="card__item">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium labore id culpa sit nisi nostrum, excepturi cumque eos laborum ducimus alias, provident doloribus et facere explicabo ab repudiandae perferendis earum.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard__item dashboard__item--col">
+                    <div class="card">
+                        <div class="card__header">
+                            Card
+                        </div>
+                        <div class="card__content">
+                            <div class="card__item">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium labore id culpa sit nisi nostrum, excepturi cumque eos laborum ducimus alias, provident doloribus et facere explicabo ab repudiandae perferendis earum.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard__item dashboard__item--full">
+                    <div class="card">
+                        <div class="card__header">
+                            Card full width
+                        </div>
+                        <div class="card__content">
+                            <div class="card__item">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium labore id culpa sit nisi nostrum, excepturi cumque eos laborum ducimus alias, provident doloribus et facere explicabo ab repudiandae perferendis earum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima dolore laudantium est, vel illo labore nostrum cupiditate perspiciatis, doloremque sit enim sequi, quasi cumque dolorum voluptate! Aliquam corrupti laboriosam nostrum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda cupiditate porro dolores optio dicta tempora quas, culpa itaque, unde recusandae tempore. Voluptas quia perferendis est veritatis nobis, iusto voluptate dolor?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

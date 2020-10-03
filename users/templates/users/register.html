@@ -1,0 +1,24 @@
+{% extends "blog/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Register as a Student</h5>
+          <p class="card-text">Get Access to Study Materials from the faculty</p>
+          <a href="{% url 'student_register' %}" class="btn btn-primary">Register</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Register as a faculty</h5>
+          <p class="card-text">Upload the study materials for the students</p>
+          <a href="{% url 'faculty_register' %}" class="btn btn-primary">Register</a>
+        </div>
+      </div>
+    </div>
+</div>
+{% endblock content %}
